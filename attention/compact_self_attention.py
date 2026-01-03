@@ -50,7 +50,7 @@ class SelfAttention_v2(nn.Module):
     def forward(self, x):
         keys = self.W_key(x)
         queries = self.W_query(x)
-        values = self.W_value(x)
+        # values = self.W_value(x)
 
         attn_scores = queries @ keys.T
 
